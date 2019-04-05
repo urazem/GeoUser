@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>StepsToGo</title>
+   
+   <!-- HERE Location API styles -->        
+   <link rel="stylesheet" type="text/css" 
+    href="https://js.api.here.com/v3/3.0/mapsjs-ui.css?dp-version=1542186754"/>
+   
+   <!-- Bootstrap styles -->
+   <link rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+   <!-- Custom style -->
+   <link rel="stylesheet" type="text/css" href="./style.css">
+   
+   <!-- HERE Location API -->
+   <script src="http://js.api.here.com/v3/3.0/mapsjs-core.js" 
+   type="text/javascript" charset="utf-8"></script>
+   <script src="http://js.api.here.com/v3/3.0/mapsjs-service.js" 
+   type="text/javascript" charset="utf-8"></script>
+   <script src="https://js.api.here.com/v3/3.0/mapsjs-ui.js" 
+   type="text/javascript"></script>
+   <script src="http://js.api.here.com/v3/3.0/mapsjs-mapevents.js" 
+   type="text/javascript" charset="utf-8"></script>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <a class="navbar-brand" href="#">StepToGo</a>
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="text" id="steps" placeholder="Количество шагов">
+        <button class="btn btn-success" type="submit" id="search">Поиск</button>
+      </form>
+     </nav>
+             
+     <!-- Map container -->
+     <div id="map"></div>
+
+     <!-- Custom js file -->
+     <script type="text/javascript" src="./main.js" charset="utf-8"></script>
+   </body>
+</html>
